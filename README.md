@@ -33,7 +33,7 @@ Edit the `nostr.json` file, replacing:
 
 * `YOUR_NOSTR_NAME` with whatever name you prefer, such as `seth`
   * This name will be appended to your domain name (i.e. `seth@sethforprivacy.com`), so usually best to keep it short and sweet
-  * You can also set it to just `-` and your NIP-05 verification will be *just* your domain (i.e. `sethforprivacy.com`)
+  * You can also set it to just `_` and your NIP-05 verification will be *just* your domain (i.e. `sethforprivacy.com`). You would need to use `_@domain.com` for your NIP05 config in your client.
 * `YOUR_NOSTR_PUBLIC_KEY_IN_HEX` with your Nostr public key, in hex format, like `58ead82fa15b550094f7f5fe4804e0fe75b779dbef2e9b20511eccd69e6d08f9`
 
 It should look like the following afterwards:
