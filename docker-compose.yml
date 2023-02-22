@@ -26,9 +26,9 @@ services:
       - "./letsencrypt:/letsencrypt"
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
 
-  well-known:
+  nip05:
     image: nginx:alpine
-    container_name: well-known
+    container_name: nip05
     restart: unless-stopped
     volumes:
       - ./nginx.conf:/etc/nginx/conf.d/nostr.conf
