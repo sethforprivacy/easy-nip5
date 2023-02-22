@@ -41,3 +41,10 @@ services:
       - "traefik.http.routers.well-known.tls.certresolver=selfhostedservices"
       - "traefik.http.middlewares.accesscontrol.headers.customResponseHeaders.access-control-allow-origin=*"
       - "traefik.http.routers.well-known.middlewares=accesscontrol@docker"
+      
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
